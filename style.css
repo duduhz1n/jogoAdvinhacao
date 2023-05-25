@@ -1,0 +1,125 @@
+ body {
+	font-family: Cambria Math;
+	background-color: #141414;
+	color: white;
+	background-image: url(fundo.png);
+}
+	
+    h1 {
+      text-align: center;
+	  margin-bottom: 10px;
+	  color: #05853B;
+    }
+	
+	p{
+		text-align: center;
+	}
+	
+	img {
+		width: 60px;
+	}
+
+    div {
+      margin: 0 auto;
+      width: 600px;
+      padding: 50px;
+      border: 7px solid #ccc;
+      border-radius: 50px;
+	  background-color: #141414;
+	  border-color: black;
+	  margin-top: 200px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+	  margin-left: 140px;
+	  font-size: 22px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+	  background-color: black;
+	  border-radius: 2px;
+	  color: white;
+    }
+
+    button {
+      display: block;
+      margin-top: 30px;
+	  margin-left: 40px;
+      padding: 5px 10px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+	  font-size: 16px;
+	  width: 500px;
+    }
+
+    .resultado {
+      margin-top: 40px;
+	  margin-left: 2px;
+      font-family: Cambria Math;
+	  font-size: 20px;
+      text-align: center;
+    }
+
+	
+/* From uiverse.io by @Ali-Tahmazi99 */
+.buttonteste {
+ display: inline-block;
+ width: 500px;
+ height: 50px;
+ border-radius: 10px;
+ border: 1px solid #05853B;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.5s ease-in;
+ z-index: 1;
+ background-color: black;
+ color: white;
+}
+
+button::before,
+button::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ width: 0;
+ height: 100%;
+ transform: skew(15deg);
+ transition: all 0.5s;
+ overflow: hidden;
+ z-index: -1;
+}
+
+button::before {
+ left: -10px;
+ background: #05853B;
+}
+
+button::after {
+ right: -10px;
+ background: #05853B;
+}
+
+button:hover::before,
+button:hover::after {
+ width: 58%;
+}
+
+button:hover span {
+ color: white;
+ transition: 0.3s;
+}
+
+button span {
+ color: #05853B;
+ font-size: 18px;
+ transition: all 0.3s ease-in;
+}
+
